@@ -101,6 +101,10 @@ vk.updates.on("message_new", async (context) => {
     }
   }
 
+  if (context.text === "Привет") {
+    await context.send({message: "👋 Привет вездекодерам!"})
+    }
+
   if (context.text === "Начать") {
     await context.send({
       message: "👋 Привет! Готов начать опрос?",
